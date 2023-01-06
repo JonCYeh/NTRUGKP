@@ -285,7 +285,7 @@ def simulateNTRU(sig, M, That_sigma_f, That_sigma_hinv, n, q, p, NUM_max, precis
     return prob_err, prob_check
 
 
-def simulateNTRU_babX(sig, M, Xs_basis, n, q, NUM_max, precision=12):
+def simulateNTRU_babX(sig, M, mXs_basis, n, q, NUM_max, precision=12):
     NUM_tot = 0
     count_err = 0
     count_CHECK = 0
@@ -303,7 +303,7 @@ def simulateNTRU_babX(sig, M, Xs_basis, n, q, NUM_max, precision=12):
         synd = balancedmod_ar(M @ J @ err_prime, 1)
         qsynd = np.round(q * synd) % q
 
-        dec_res = Nearest_Plane(Xs_basis, qsynd)
+        dec_res = Nearest_Plane(mXs_basis, qsynd)
 
         err_pp = err_prime - dec_res / np.sqrt(2 * q)
 
@@ -351,8 +351,7 @@ class Cload_and_sim(object):
         self.p = np.prod(np.asarray(self.p_list))
         self.q = q
         self.data = np.genfromtxt(
-            "%s/NTRU_%s_n%i_q%i_p%i_d%i.txt" % (self.folder, self.prefix, self.n, self.q, self.p, self.d))
-
+            "%s/NTRU_%s_n%i_q%i_p%i_d%i.txt" % (self.folder, self.prefix, self.n, self.q, self.p, self.d)) 
         if inv:
             self.h, self.h_inv, self.f_vec, self.g_vec, _ = self.data
             self.That_sigma_hinv = Thatsigma(self.h_inv)
@@ -367,9 +366,10 @@ class Cload_and_sim(object):
 
         self.MJ_inv = np.linalg.inv(self.M @ Jsym(n))
         self.Xs_basis = Xsec_basis(self.f_vec, self.g_vec, self.q, self.n, self.l)
-        self.Xs_HKZ_basis = np.genfromtxt(
-            "%s/NTRU_HKZ_n%i_q%i_p%i_d%i.txt" % (self.folder, self.n, self.q, self.p, self.d))
-
+        #self.mXs_HKZ_basis = np.genfromtxt(
+        #    "%s/NTRU_mHKZ_n%i_q%i_p%i_d%i.txt" % (self.folder, self.n, self.q, self.p, self.d))
+        self.mXs_HKZ_basis = np.genfromtxt(
+           "%s/NTRU_mLLL_n%i_q%i_p%i_d%i.txt" % (self.folder, self.n, self.q, self.p, self.d))
         self.p_err = np.zeros(len(sigmas))
         self.p_check = np.zeros(len(sigmas))
         self.rat_Babai = np.zeros(len(sigmas))
@@ -381,7 +381,7 @@ class Cload_and_sim(object):
         return data
 
     def BabaiX_evaluate(self, i):
-        data = simulateNTRU_babX(self.sigmas[i], self.M, self.Xs_HKZ_basis, self.n, self.q,
+        data = simulateNTRU_babX(self.sigmas[i], self.M, self.mXs_HKZ_basis, self.n, self.q,
                                  self.NUM_MAX, precision=self.precision)
         return data
 
@@ -418,14 +418,14 @@ class Cload_and_sim(object):
 
 cpu_count=multiprocessing.cpu_count()
 
-Ns=[7,11,17,37]#, 97]
+Ns=[7,11,17,23, 31]#, 97]
 Ds=[n//3 for n in Ns]
-Qs=[4,8,16,32]#,64]
+Qs=[8]*len(Ns)#[4,8,16,32]#,64]
 Ps=[[3],[5],[7],[3,5]]#[[3]]*len(Ns)#
 NUM_MAX=int(1e5)
 
 
-sigmas=np.linspace(1e-7,0.2,100)
+sigmas=np.linspace(1e-7,0.2/np.sqrt(2*np.pi),100)
 
 hinv=True
 p3=True
@@ -462,32 +462,33 @@ else:
 
 if __name__ == '__main__':
 
-    for k in range(len(Ns)-1):
+    for k in [-1]:#range(len(Ns)):
+
 
         n, q, d, p_list = Ns[k], Qs[k], Ds[k], Ps[k]
 
         if hinv:
-            worker_NTRU = Cload_and_sim(sigmas, n, q, p_list, d, "opt", loadfolder, NUM_MAX, precision=12, inv=hinv)
+            worker_NTRU = Cload_and_sim(sigmas, n, q, p_list, d, "LLL", loadfolder, NUM_MAX, precision=12, inv=hinv)
 
-        #worker_BAB = Cload_and_sim(sigmas, n, q, p_list, d, "opt", loadfolder, NUM_MAX, precision=12, inv=hinv)
+        worker_BAB = Cload_and_sim(sigmas, n, q, p_list, d, "LLL", loadfolder, NUM_MAX, precision=12, inv=hinv)
 
 
 
-        with Pool(cpu_count-3) as p:
+        with Pool(cpu_count-1) as p:
 
             if hinv:
                 data_NTRU=p.map(worker_NTRU.evaluate, list(range(len(sigmas))))
 
-            #data_BAB = p.map(worker_BAB.BabaiX_evaluate, list(range(len(sigmas))))
+            data_BAB = p.map(worker_BAB.BabaiX_evaluate, list(range(len(sigmas))))
 
         for i in range(len(sigmas)):
             if hinv:
                 worker_NTRU.p_err[i], worker_NTRU.p_check[i] = data_NTRU[i][0], data_NTRU[i][1]
-            #worker_BAB.p_err[i], worker_BAB.p_check[i] = data_BAB[i][0], data_BAB[i][1]
+            worker_BAB.p_err[i], worker_BAB.p_check[i] = data_BAB[i][0], data_BAB[i][1]
 
         if hinv:
-            worker_NTRU.save(savefolder, "NTRU")
-        #worker_BAB.save(savefolder, "BAB")
+            worker_NTRU.save(savefolder, "NTRU_LLL")
+        worker_BAB.save(savefolder, "BAB_LLL")
 
 
 

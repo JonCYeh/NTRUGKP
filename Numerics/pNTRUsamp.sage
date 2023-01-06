@@ -150,6 +150,11 @@ def Xsec_basis(f, g, q, n):
     return np.block([[Tg, Tf_sigma]])
 
 
+def mXsec_basis(f, g, q, n):
+    Tf_sigma = Tsigma(f)
+    Tg = T(g)
+    return np.block([[-Tg, Tf_sigma]])
+
 from tqdm import tqdm
 
 
@@ -377,19 +382,28 @@ def Xsec_HKZ_save(f, g, q, n, path):
     return
 
 
+def mXsec_HKZ_save(f, g, q, n, path):
+    mX_sec = mXsec_basis(f, g, q, n)
+    HKZ_save(path, mX_sec)
+
+    return
+
+
+
+
 
 #--------------------------------------------------------------------------------------------#
 
 
 NUM=100
 
-hinv=False
+hinv=True
 p3=True
 
 
-Ns=[7,11,17,37]#, 97]
+Ns=[7,11,17,23]#, 97]
 Ds=[n//3 for n in Ns]
-Qs=[4,8,16,32]#,64]
+Qs=[8]*len(Ns)#[#4,8,16,32]#,64]
 
 if p3:
     Ps=[3]*len(Ns)
@@ -401,7 +415,7 @@ opt_len=[0]*len(Ns)
 #len_plot=[]
 
 
-for i in range(len(Ns)-1):
+for i in [-1]:#range(len(Ns)-1):
     q=Qs[i]
 
     p=Ps[i]
@@ -435,24 +449,24 @@ for i in range(len(Ns)-1):
     if hinv:
         if p3:
             folder="pNTRU_lats_hinv_p3"
-            np.savetxt("%s/NTRU_opt_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
-            Xsec_HKZ_save(optimal[2], optimal[3], q,n,  "%s/NTRU_HKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
+            np.savetxt("%s/NTRU_new_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
+            mXsec_HKZ_save(optimal[2], optimal[3], q,n,  "%s/NTRU_mHKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
 
         else:
             folder="pNTRU_lats_hinv"
-            np.savetxt("%s/NTRU_opt_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
-            Xsec_HKZ_save(optimal[2], optimal[3], q,n,  "%s/NTRU_HKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
+            np.savetxt("%s/NTRU_new_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
+            mXsec_HKZ_save(optimal[2], optimal[3], q,n,  "%s/NTRU_mHKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
 
     elif not hinv:
         if p3:
             folder="pNTRU_lats_p3"
-            np.savetxt("%s/NTRU_opt_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
-            Xsec_HKZ_save(optimal[1], optimal[2], q,n,  "%s/NTRU_HKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
+            np.savetxt("%s/NTRU_new_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
+            mXsec_HKZ_save(optimal[1], optimal[2], q,n,  "%s/NTRU_mHKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
 
         else:
             folder="pNTRU_lats"
-            np.savetxt("%s/NTRU_opt_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
-            Xsec_HKZ_save(optimal[1], optimal[2], q,n,  "%s/NTRU_HKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
+            np.savetxt("%s/NTRU_new_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d), optimal,comments="#sLlambda_1=%.2f"%(temp_len[indmax]))
+            mXsec_HKZ_save(optimal[1], optimal[2], q,n,  "%s/NTRU_mHKZ_n%i_q%i_p%i_d%i.txt"%(folder, n,q,p,d))
 
 
     print("n,d=", n,d, "DONE")
