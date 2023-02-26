@@ -14,6 +14,7 @@
 \newcommand{\CyclicFolder}{../Numerics/Sampling_Cyclic}
 \newcommand{\NoinvFolder}{../Numerics/Sampling_noinv_p}
 \newcommand{\HinvFolder}{../Numerics/Sampling_hinv_p}
+\newcommand{\DGSFolder}{../Numerics/Sampling_DGS_new}
 
 
 \node at (0,0) {\includegraphics{\CyclicFolder/Cyclic_samples_HKZlambda_q4.pdf}};
@@ -36,19 +37,40 @@
 \node at (32,-24) {\includegraphics{\HinvFolder/NTRU_samples_hinv_pub_HKZlambda_q64.pdf}};
 \node at (48,-24) {\includegraphics{\HinvFolder/NTRU_samples_hinv_pub_HKZlambda_q256.pdf}};
 \node at (64,-24) {\includegraphics{\HinvFolder/NTRU_samples_hinv_pub_HKZlambda_q1024.pdf}};
+
+\node at (0,-38) {\includegraphics{\DGSFolder/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q167.pdf}};
+\node at (16,-38) {\includegraphics{\DGSFolder/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q367.pdf}};
+\node at (32,-38) {\includegraphics{\DGSFolder/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q509.pdf}};
+\node at (48,-38) {\includegraphics{\DGSFolder/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q1021.pdf}};
+\node at (64,-38) {\includegraphics{\DGSFolder/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q2027.pdf}};
+
+
+
+
 \node[scale=4] at (-20,  6) {$ a)$};
-\node[scale=3] at (-15,  0) {$\begin{aligned} h  \sim \mathbb{Z}_q[x] / \langle x^n-1\rangle \end{aligned}$};
+\node[scale=4] at (-14,  6) {$ \Phi_0=x^n-1$};
+\node[scale=3] at (-15,  0) {$\begin{aligned} h  \hookleftarrow \mathbb{Z}_q[x] / \langle x^n-1\rangle \end{aligned}$};
 \node[scale=4] at (-20,  -6) {$ b)$};
-\node[scale=3] at (-14,  -12){$\begin{aligned}f &\sim 1+D(d,d) \\&\hspace{.5cm} \text{invertible} \,  \mod q \\ g &\sim D(d,d)  \\ d&=\lfloor n/3 \rfloor \end{aligned}$}; 
+\node[scale=3] at (-14,  -12){$\begin{aligned}f &\hookleftarrow 1+pD(d,d) \\&\hspace{.5cm} \text{invertible} \,  \mod q \\ g &\hookleftarrow pD(d,d)  \\ d&=\lfloor n/3 \rfloor \end{aligned}$}; 
 % \node[scale=3] at (-14,  -13){$g \sim T(d,d)$};
 \node[scale=4] at (-20,  -18) {$ c)$};
-\node[scale=3] at (-14,  -24){$\begin{aligned}f &\sim 1+D(d,d) \\&\hspace{.5cm} \text{invertible}\,  \mod q \\ g &\sim D(d+1,d)  \\ h &=g/f \\&\hspace{.5cm}\text{invertible}\,  \mod q  \\ d&=\lfloor n/3 \rfloor\end{aligned} $}; 
+\node[scale=3] at (-14,  -24){$\begin{aligned}f &\hookleftarrow 1+pD(d,d) \\&\hspace{.5cm} \text{invertible}\,  \mod q \\ g &\hookleftarrow pD(d+1,d)  \\ h &=g/f \\&\hspace{.5cm}\text{invertible}\,  \mod q  \\ d&=\lfloor n/3 \rfloor\end{aligned} $}; 
+\node[scale=4] at (-20,  -32) {$ d)$};
+\node[scale=4] at (-14,  -32) {$ \Phi=x^n+1$};
+\node[scale=3] at (-14,  -38){$\begin{aligned}f &\hookleftarrow 1+pD_{\mathbb{Z}, \sqrt{q}} \\&\hspace{.5cm} \text{invertible}\,  \mod q \\ g &\hookleftarrow pD_{\mathbb{Z}, \sqrt{q}} \\  &\hspace{.5cm} \text{invertible}\,  \mod q   \\ h &=g/f \, \mod q\end{aligned} $}; 
+
 
 \node[scale=3] at (0,7) {$q=4$};
 \node[scale=3] at (16,7) {$q=16$};
 \node[scale=3] at (32,7) {$q=64$};
 \node[scale=3] at (48,7) {$q=256$};
 \node[scale=3] at (64,7) {$q=1024$};
+\node[scale=3] at (0,-32) {$q=167$};
+\node[scale=3] at (16,-32) {$q=367$};
+\node[scale=3] at (32,-32) {$q=509$};
+\node[scale=3] at (48,-32) {$q=1021$};
+\node[scale=3] at (64,-32) {$q=2027$};
+
 \end{tikzpicture}
 
 \end{document}

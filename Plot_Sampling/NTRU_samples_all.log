@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.9)  22 DEC 2022 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.9)  21 FEB 2023 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -874,139 +874,184 @@ LaTeX Info: Redefining \nameref on input line 11.
 \@outlinefile=\write6
 \openout6 = `NTRU_samples_all.out'.
 
-<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q4.pdf, id=7, 454.11821pt
- x 338.0186pt>
+<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q4.pdf, id=7, 433.1751pt 
+x 293.26472pt>
 File: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q4.pdf Graphic file 
 (type pdf)
 <use ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q4.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q
-4.pdf  used on input line 19.
-(pdftex.def)             Requested size: 454.1171pt x 338.01776pt.
-<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q16.pdf, id=8, 453.92715p
-t x 338.0186pt>
+4.pdf  used on input line 20.
+(pdftex.def)             Requested size: 433.17404pt x 293.264pt.
+<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q16.pdf, id=8, 432.84937p
+t x 293.26472pt>
 File: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q16.pdf Graphic file
  (type pdf)
 <use ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q16.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q
-16.pdf  used on input line 20.
-(pdftex.def)             Requested size: 453.92604pt x 338.01776pt.
-<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q64.pdf, id=9, 454.01976p
-t x 338.0186pt>
+16.pdf  used on input line 21.
+(pdftex.def)             Requested size: 432.8483pt x 293.264pt.
+<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q64.pdf, id=9, 433.10756p
+t x 293.26472pt>
 File: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q64.pdf Graphic file
  (type pdf)
 <use ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q64.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q
-64.pdf  used on input line 21.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
-<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q256.pdf, id=10, 454.0197
-6pt x 338.0186pt>
+64.pdf  used on input line 22.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q256.pdf, id=10, 433.1075
+6pt x 293.26472pt>
 File: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q256.pdf Graphic fil
 e (type pdf)
 <use ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q256.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q
-256.pdf  used on input line 22.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
-<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q1024.pdf, id=11, 454.019
-76pt x 338.0186pt>
+256.pdf  used on input line 23.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q1024.pdf, id=11, 433.107
+56pt x 293.26472pt>
 File: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q1024.pdf Graphic fi
 le (type pdf)
 <use ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q1024.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_Cyclic/Cyclic_samples_HKZlambda_q
-1024.pdf  used on input line 23.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
+1024.pdf  used on input line 24.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
 <../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q4.pdf, id=12, 4
-54.11821pt x 338.0186pt>
+33.1751pt x 293.26472pt>
 File: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q4.pdf Grap
 hic file (type pdf)
 <use ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q4.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HK
-Zlambda_q4.pdf  used on input line 26.
-(pdftex.def)             Requested size: 454.1171pt x 338.01776pt.
+Zlambda_q4.pdf  used on input line 27.
+(pdftex.def)             Requested size: 433.17404pt x 293.264pt.
 <../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q16.pdf, id=13, 
-453.92715pt x 338.0186pt>
+432.84937pt x 293.26472pt>
 File: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q16.pdf Gra
 phic file (type pdf)
 <use ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q16.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HK
-Zlambda_q16.pdf  used on input line 27.
-(pdftex.def)             Requested size: 453.92604pt x 338.01776pt.
+Zlambda_q16.pdf  used on input line 28.
+(pdftex.def)             Requested size: 432.8483pt x 293.264pt.
 <../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q64.pdf, id=14, 
-454.01976pt x 338.0186pt>
+433.10756pt x 293.26472pt>
 File: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q64.pdf Gra
 phic file (type pdf)
 <use ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q64.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HK
-Zlambda_q64.pdf  used on input line 28.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
+Zlambda_q64.pdf  used on input line 29.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
 <../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q256.pdf, id=15,
- 454.01976pt x 338.0186pt>
+ 433.10756pt x 293.26472pt>
 File: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q256.pdf Gr
 aphic file (type pdf)
 <use ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q256.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HK
-Zlambda_q256.pdf  used on input line 29.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
+Zlambda_q256.pdf  used on input line 30.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
 <../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q1024.pdf, id=16
-, 454.01976pt x 338.0186pt>
+, 433.10756pt x 293.26472pt>
 File: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q1024.pdf G
 raphic file (type pdf)
 <use ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HKZlambda_q1024.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_noinv_p/NTRU_samples_noinv_pub_HK
-Zlambda_q1024.pdf  used on input line 30.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
-<../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q4.pdf, id=17, 454
-.11821pt x 338.0186pt>
+Zlambda_q1024.pdf  used on input line 31.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q4.pdf, id=17, 433
+.1751pt x 293.26472pt>
 File: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q4.pdf Graphi
 c file (type pdf)
 <use ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q4.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZl
-ambda_q4.pdf  used on input line 34.
-(pdftex.def)             Requested size: 454.1171pt x 338.01776pt.
-<../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q16.pdf, id=18, 45
-3.92715pt x 338.0186pt>
+ambda_q4.pdf  used on input line 35.
+(pdftex.def)             Requested size: 433.17404pt x 293.264pt.
+<../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q16.pdf, id=18, 43
+2.84937pt x 293.26472pt>
 File: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q16.pdf Graph
 ic file (type pdf)
 <use ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q16.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZl
-ambda_q16.pdf  used on input line 35.
-(pdftex.def)             Requested size: 453.92604pt x 338.01776pt.
-<../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q64.pdf, id=19, 45
-4.01976pt x 338.0186pt>
+ambda_q16.pdf  used on input line 36.
+(pdftex.def)             Requested size: 432.8483pt x 293.264pt.
+<../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q64.pdf, id=19, 43
+3.10756pt x 293.26472pt>
 File: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q64.pdf Graph
 ic file (type pdf)
 <use ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q64.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZl
-ambda_q64.pdf  used on input line 36.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
+ambda_q64.pdf  used on input line 37.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
 <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q256.pdf, id=20, 4
-54.01976pt x 338.0186pt>
+33.10756pt x 293.26472pt>
 File: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q256.pdf Grap
 hic file (type pdf)
 <use ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q256.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZl
-ambda_q256.pdf  used on input line 37.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
+ambda_q256.pdf  used on input line 38.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
 <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q1024.pdf, id=21, 
-454.01976pt x 338.0186pt>
+433.10756pt x 293.26472pt>
 File: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q1024.pdf Gra
 phic file (type pdf)
 <use ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q1024.pdf>
 Package pdftex.def Info: ../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZl
-ambda_q1024.pdf  used on input line 38.
-(pdftex.def)             Requested size: 454.01865pt x 338.01776pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+ambda_q1024.pdf  used on input line 39.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q167.pdf,
+ id=22, 433.10756pt x 293.26472pt>
+File: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q167
+.pdf Graphic file (type pdf)
+<use ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q167.
+pdf>
+Package pdftex.def Info: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c
+0.00_HKZlambda_q167.pdf  used on input line 41.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q367.pdf,
+ id=23, 433.10756pt x 293.26472pt>
+File: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q367
+.pdf Graphic file (type pdf)
+<use ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q367.
+pdf>
+Package pdftex.def Info: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c
+0.00_HKZlambda_q367.pdf  used on input line 42.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q509.pdf,
+ id=24, 433.10756pt x 293.26472pt>
+File: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q509
+.pdf Graphic file (type pdf)
+<use ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q509.
+pdf>
+Package pdftex.def Info: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c
+0.00_HKZlambda_q509.pdf  used on input line 43.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q1021.pdf
+, id=25, 433.10756pt x 293.26472pt>
+File: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q102
+1.pdf Graphic file (type pdf)
+<use ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q1021
+.pdf>
+Package pdftex.def Info: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c
+0.00_HKZlambda_q1021.pdf  used on input line 44.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+<../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q2027.pdf
+, id=26, 433.10756pt x 293.26472pt>
+File: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q202
+7.pdf Graphic file (type pdf)
+<use ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q2027
+.pdf>
+Package pdftex.def Info: ../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c
+0.00_HKZlambda_q2027.pdf  used on input line 45.
+(pdftex.def)             Requested size: 433.10649pt x 293.264pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 39
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 50
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
@@ -1014,11 +1059,11 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 39.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 39.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
 
 [1
 
@@ -1035,34 +1080,41 @@ samples_noinv_pub_HKZlambda_q1024.pdf> <../Numerics/Sampling_hinv_p/NTRU_sample
 s_hinv_pub_HKZlambda_q4.pdf> <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub
 _HKZlambda_q16.pdf> <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambd
 a_q64.pdf> <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q256.pd
-f> <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q1024.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
-
-(./NTRU_samples_all.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
+f> <../Numerics/Sampling_hinv_p/NTRU_samples_hinv_pub_HKZlambda_q1024.pdf> <../
+Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q167.pdf> <..
+/Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q367.pdf> <.
+./Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q509.pdf> <
+../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q1021.pdf>
+ <../Numerics/Sampling_DGS_new/NTRU_lambda_samples_DGS_c0.00_HKZlambda_q2027.pd
+f>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
+ (./NTRU_samples_all.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `NTRU_samples_all.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22977 strings out of 480608
- 452239 string characters out of 5903631
- 700553 words of memory out of 5000000
- 38375 multiletter control sequences out of 15000+600000
+ 23011 strings out of 480608
+ 454701 string characters out of 5903631
+ 708553 words of memory out of 5000000
+ 38403 multiletter control sequences out of 15000+600000
  537672 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,13n,79p,844b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,79p,844b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-
-Output written on NTRU_samples_all.pdf (1 page, 239389 bytes).
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on NTRU_samples_all.pdf (1 page, 304043 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
+ 549 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
  2 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
